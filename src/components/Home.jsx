@@ -10,17 +10,18 @@ const Home = () => {
             <div
               className="image avatar_img"
               style={{
-                backgroundImage: "url(assets/img/slider/1.jpg)",
+                backgroundImage: "url(assets/img/home/main.jpg)",
               }}
             ></div>
             {/* END AVATAR IMAGE */}
           </div>
           {/* END AVATAR */}
           <div className="details">
-            <h3 className="name">Adriano Smith</h3>
+            <h3 className="name">Ishan Wardhono</h3>
             <p className="job">
-              Creative Photographer based in New York and happy to travel all
-              over Europe to capture photos.
+              3 years of experience as a Backend Software Engineer.
+              Skilled in <b>Go</b>, <b>Typescript</b>, <b>NodeJS</b> and <b>Java</b>.
+              Familiar with Object-Oriented Programming and Design Patterns.
             </p>
             {/* END JOB */}
             <Social />

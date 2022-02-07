@@ -16,7 +16,7 @@ const HomeLight = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <b><h2>Ishan Wardhono</h2></b>
+                <b><h3>Ishan Wardhono</h3></b>
               </div>
               {/* END LOGO */}
 
@@ -68,7 +68,7 @@ const HomeLight = () => {
 
               <div className="copyright">
                 <p>
-                  &copy; {new Date().getFullYear()}
+                  &copy; {new Date().getFullYear()} - Indonesia
                 </p>
               </div>
               {/* END COPYRIGHT */}
