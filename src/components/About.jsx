@@ -99,7 +99,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="job-desc">
+            <div className="company-desc">
               <p>
                 A robotics warehouse startup with a mission to automate and simplify the warehouse industry.
               </p>
