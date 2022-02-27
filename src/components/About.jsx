@@ -87,7 +87,9 @@ const About = () => {
           <h2 className="name">Experience</h2>
           <div className="job">
             <h4>Backend Developer</h4>
+            
             <hr className="dotted"></hr>
+            
             <div className="company">
               <div className="company-name">
                 <span>Pingspace Robotics</span> (Remote - Penang, Malaysia)
@@ -95,6 +97,12 @@ const About = () => {
               <div className="company-period">
                 <span>June 2021 - Now</span>
               </div>
+            </div>
+
+            <div className="job-desc">
+              <p>
+                A robotics warehouse startup with a mission to automate and simplify the warehouse industry.
+              </p>
             </div>
           </div>
         </div>

@@ -624,6 +624,9 @@ hr.dotted {
 .tokyo_tm_about .experience .job .company .company-period > span {
   float: right;
 }
+.tokyo_tm_about .experience .job .job-desc {
+  padding-left: 50px;
+}
 .tokyo_tm_button {
   width: 100%;
   height: auto;
@@ -1751,6 +1754,9 @@ body.modal {
   }
   .tokyo_tm_about .experience .job .company .company-period > span {
     float: left;
+  }
+  .tokyo_tm_about .experience .job .job-desc {
+    padding-left: 0px;
   }
   .tokyo_tm_title .title_flex {
     flex-direction: column;
