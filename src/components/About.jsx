@@ -15,66 +15,64 @@ const About = () => {
     <>
       <div className="tokyo_tm_about">
         <div className="about_image ">
-          <img src="assets/img/slider/1.jpg" alt="about" />
+          <img src="assets/img/slider/about_1.jpg" alt="about" />
         </div>
         {/* <div className="o-video">
           <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
         </div> */}
         {/* END ABOUT IMAGE */}
         <div className="description">
-          <h3 className="name">Adriano Smith &amp; Photographer</h3>
+          <h2 className="name">Ishan Wardhono - Backend Software Engineer</h2>
           <div className="description_inner">
             <div className="left">
-              <p>
-                Hello, I am a creative photographer based in New York and happy
-                to travel all over Europe to capture your big day in candid and
-                authentic photos. I will create a lasting memory of the people.
-              </p>
-              <div className="tokyo_tm_button">
-                <button onClick={toggleModal} className="ib-button">
-                  Read More
-                </button>
-              </div>
-              {/* END TOKYO BUTTON */}
+              <ul>
+                <li>
+                  <p>
+                    <span>Birthday:</span>21 Jan 1996
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Age:</span>26
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Address:</span>Jakarta, Indonesia
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Email:</span>
+                    <a href="mailto:mail@gmai.com">ishanwardhono@gmail.com</a>
+                  </p>
+                </li>
+              </ul>
             </div>
             {/* END LEFT */}
             <div className="right">
               <ul>
                 <li>
                   <p>
-                    <span>Birthday:</span>01.07.1990
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Age:</span>31
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Address:</span>Ave 11, New York, USA
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Email:</span>
-                    <a href="mailto:mail@gmail.com">mail@gmail.com</a>
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Phone:</span>
-                    <a href="tel:+770221770505">+77 022 177 05 05</a>
+                    <a href="tel:+6285270682470">+62 852 7068 2470</a>
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Study:</span>Univercity of Texas
+                    <span>Education:</span>Bachelor of Computer Science
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Freelance:</span>Available
+                    <span>LinkedIn:</span>
+                    <a href="https://linkedin.com/in/ishanwardhono">linkedin.com/in/ishanwardhono</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Github:</span>
+                    <a href="https://github.com/ishanwardhono">github.com/ishanwardhono</a>
                   </p>
                 </li>
               </ul>
@@ -84,182 +82,23 @@ const About = () => {
           </div>
           {/* END DESCRIPTION INNER */}
         </div>
-      </div>
-
-      {/* START ABOUT POPUP BOX */}
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModal}
-        contentLabel="My dialog"
-        className="mymodal"
-        overlayClassName="myoverlay"
-        closeTimeoutMS={500}
-      >
-        <div className="tokyo_tm_modalbox_about">
-          <button className="close-modal" onClick={toggleModal}>
-            <img src="assets/img/svg/cancel.svg" alt="close icon" />
-          </button>
-          {/* END POPUP CLOSE BUTTON */}
-          <div className="box-inner">
-            <div
-              className="description_wrap scrollable"
-              data-aos="fade-right"
-              data-aos-duration="1200"
-            >
-              <div className="my_box">
-                <div className="left">
-                  <div className="about_title">
-                    <h3>Photography Skills</h3>
-                  </div>
-                  {/* END ABOUT TITLE */}
-
-                  <div className="tokyo_progress">
-                    <div className="progress_inner" data-value="95">
-                      <span>
-                        <span className="label">Wedding Photography</span>
-                        <span className="number">95%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 95 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="progress_inner" data-value="80">
-                      <span>
-                        <span className="label">Lifestyle Photography</span>
-                        <span className="number">80%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 80 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="progress_inner" data-value="90">
-                      <span>
-                        <span className="label">Family Photography</span>
-                        <span className="number">90%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* END PROGRESS */}
-                </div>
-                {/* END LEFT */}
-
-                <div className="right">
-                  <div className="about_title">
-                    <h3>Language Skills</h3>
-                  </div>
-                  {/* END TITLE */}
-                  <div className="tokyo_progress">
-                    <div className="progress_inner" data-value="95">
-                      <span>
-                        <span className="label">English</span>
-                        <span className="number">95%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 95 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="progress_inner" data-value="90">
-                      <span>
-                        <span className="label">Japanese</span>
-                        <span className="number">90%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 90 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="progress_inner" data-value="85">
-                      <span>
-                        <span className="label">Arabian</span>
-                        <span className="number">85%</span>
-                      </span>
-                      <div className="background">
-                        <div className="bar">
-                          <div
-                            className="bar_in"
-                            style={{ width: 85 + "%" }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* EDN TOKYO PROGRESS */}
-                </div>
-                {/* END RIGHT */}
+        <div className="separator"></div>
+        <div className="experience">
+          <h2 className="name">Experience</h2>
+          <div className="job">
+            <h4>Backend Developer</h4>
+            <hr className="dotted"></hr>
+            <div className="company">
+              <div className="company-name">
+                <span>Pingspace Robotics</span> (Remote - Penang, Malaysia)
               </div>
-              {/* END MYBOX */}
-
-              <div className="counter">
-                <div className="about_title">
-                  <h3>Fun Facts</h3>
-                </div>
-                <ul>
-                  <li>
-                    <div className="list_inner">
-                      <h3>777+</h3>
-                      <span>Projects Completed</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="list_inner">
-                      <h3>3K</h3>
-                      <span>Happy Clients</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="list_inner">
-                      <h3>9K+</h3>
-                      <span>Lines of Code</span>
-                    </div>
-                  </li>
-                </ul>
-                {/* END COUNTER CONTENT */}
+              <div className="company-period">
+                <span>June 2021 - Now</span>
               </div>
-              {/* END COUNTER */}
-
-              <div className="partners">
-                <div className="about_title">
-                  <h3>Our Partners</h3>
-                </div>
-                <Brand />
-              </div>
-              {/* END PARTNER SLIDER */}
             </div>
           </div>
         </div>
-      </Modal>
-      {/* END ABOUT POPUP BOX */}
+      </div>
     </>
   );
 };

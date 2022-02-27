@@ -19,9 +19,9 @@ const Home = () => {
           <div className="details">
             <h3 className="name">Ishan Wardhono</h3>
             <p className="job">
-              3 years of experience as a Backend Software Engineer.
+              <b>3 years</b> of experience as a <b>Backend Software Engineer</b>.
               Skilled in <b>Go</b>, <b>Typescript</b>, <b>NodeJS</b> and <b>Java</b>.
-              Familiar with Object-Oriented Programming and Design Patterns.
+              Familiar with <b>Object-Oriented Programming</b> and <b>Design Patterns</b>.
             </p>
             {/* END JOB */}
             <Social />
