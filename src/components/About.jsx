@@ -104,6 +104,57 @@ const About = () => {
                 A robotics warehouse startup with a mission to automate and simplify the warehouse industry.
               </p>
             </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Develop and maintain three backend services (Warehouse Operation System, E-Commerce, Storage Management) with C#, Typescript and NodeJS</li>
+                <li>Implement database with PostgreSQL and MongoDB</li>
+                <li>Implement a logging system with RabbitMQ and MongoDB</li>
+                <li>Implement a caching system with Redis</li>
+                <li>Implement REST API for service communication</li>
+                <li>Implement SOLID Principles</li>
+                <li>Maintain Unit Tests for each function</li>
+                <li>Implement file management with AWS S3</li>
+                <li>Create high-level and low-level documentation</li>
+                <li>Develop App-Management, Products, Shops and Balances services</li>
+                <li>Create Sign-In with Apple integration for the service user authentication</li>
+                <li>Implement Github Action CI to run unit test on push to an active branch</li>
+                <li>Containerize the services with Docker and Docker Compose</li>
+              </ul>
+            </div>
+            <div className="tech-stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>C#</li>
+                    <li>Typescript</li>
+                    <li>NodeJS</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>RabbitMQ</li>
+                    <li>Docker</li>
+                    <li>Serverless-Stack</li>
+                  </ul>
+                </div>
+                <div className="qright">
+                  <ul>
+                    <li>AWS S3</li>
+                    <li>AWS Lambda Function</li>
+                    <li>Jest</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
