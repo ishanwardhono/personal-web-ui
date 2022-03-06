@@ -602,6 +602,10 @@ hr.dotted {
   color: #000;
   letter-spacing: 1px;
 }
+.tokyo_tm_about .experience .job {
+  height: auto;
+  margin-bottom: 26px;
+}
 .tokyo_tm_about .experience .job .company {
   width: 100%;
   display: flex;
@@ -634,15 +638,15 @@ hr.dotted {
 .tokyo_tm_about .experience .job .key-points > span {
   font-weight: bold;
 }
-.tokyo_tm_about .experience .job .tech-stacks .list,
-.tokyo_tm_about .experience .job .tech-stacks {
+.tokyo_tm_about .experience .job .tech-stacks .list {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .tokyo_tm_about .experience .job .tech-stacks .list .left,
 .tokyo_tm_about .experience .job .tech-stacks .list .qleft,
 .tokyo_tm_about .experience .job .tech-stacks .list .right,
 .tokyo_tm_about .experience .job .tech-stacks .list .qright {
-  float: left;
   width: 25%;
 }
 .tokyo_tm_button {
@@ -1780,8 +1784,8 @@ body.modal {
   .tokyo_tm_about .experience .job .tech-stacks .list .qleft,
   .tokyo_tm_about .experience .job .tech-stacks .list .right,
   .tokyo_tm_about .experience .job .tech-stacks .list .qright {
-  width: 50%;
-}
+    width: 50%;
+  }
   .tokyo_tm_title .title_flex {
     flex-direction: column;
     align-items: flex-start;

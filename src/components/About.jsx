@@ -101,7 +101,7 @@ const About = () => {
 
             <div className="company-desc">
               <p>
-                A robotics warehouse startup with a mission to automate and simplify the warehouse industry.
+                A robotics warehouse startup with a mission to automate and simplify the warehouse industry
               </p>
             </div>
             <div className="key-points">
@@ -151,6 +151,188 @@ const About = () => {
                     <li>AWS S3</li>
                     <li>AWS Lambda Function</li>
                     <li>Jest</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
+            <h4>Software Engineer</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-name">
+                <span>Tokopedia</span> (Jakarta, Indonesia)
+              </div>
+              <div className="company-period">
+                <span>April 2019 - May 2021</span>
+              </div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+                A leading Indonesian unicorn technology company in the e-commerce industry
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Design and develop Order Status Management, Generic Order Fulfillment and Unified Order History platform service with Golang</li>
+                <li>Design database system using CockroachDB</li>
+                <li>Maintain high availability, reliability and scalability for the services</li>
+                <li>Implement Dependency Injection, Design Patterns and SOLID Principles</li>
+                <li>Implement ACID Principles for the database</li>
+                <li>Implement asynchronous communication and retryable system with Go-NSQ Message Queue</li>
+                <li>Develop GraphQL server for Front End communication</li>
+                <li>Implement REST API and gRPC to communicate to other backend services</li>
+                <li>Implement search engine with ElasticSearch</li>
+                <li>Implement caching system with Redis Cluster</li>
+                <li>Implement schedule-based auto-scale with Terraform on high traffic events</li>
+                <li>Become a PIC for the 2 biggest vertical businesses (Marketplace and Digital Goods) to collaborate and integrate into the Unified Order History service</li>
+                <li>Implement system monitoring tools with Datadog, Grafana and Scalyr</li>
+                <li>Implement CI/CD with Jenkins</li>
+                <li>Create and maintain Unit Tests code coverage with a minimum of 70%</li>
+                <li>Create Integration Tests for all endpoints in an isolated environment with Docker</li>
+                <li>Create End-to-end Tests for almost all possible flows</li>
+                <li>Perform Load Tests to find out the system's limit</li>
+              </ul>
+            </div>
+            <div className="key-points">
+              <span>Achievements</span>
+              <ul>
+                <li>Increase service uptime by more than 99%</li>
+                <li>Keep the error rate below 1%</li>
+                <li>Increase system performance up to 300% (2500 RPS, average 60ms response time)</li>
+                <li>Improve functionality performance by reusing gRPC client, String Concatenation efficiency, Reduce nested loops based on benchmark tests.</li>
+                <li>Reduce dependencies for other team services with Order Status Management service</li>
+                <li>Speed up new vertical business delivery with General Order Fulfillment service</li>
+                <li>Increase customer satisfaction with Unified Order History service  based on app reviews and feedbacks</li>
+              </ul>
+            </div>
+            <div className="tech-stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Golang</li>
+                    <li>CockroachDb</li>
+                    <li>Redis Cluster</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>ElasticSearch</li>
+                    <li>Go-NSQ (MQ)</li>
+                    <li>gRPC</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>GraphQL</li>
+                    <li>Docker</li>
+                    <li>Jenkins</li>
+                  </ul>
+                </div>
+                <div className="qright">
+                  <ul>
+                    <li>Datadog</li>
+                    <li>Grafana</li>
+                    <li>Scalyr</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
+            <h4>Java Programmer</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-name">
+                <span>PT. Buana Varia Komputama</span> (Jakarta, Indonesia)
+              </div>
+              <div className="company-period">
+                <span>November 2018 - April 2019</span>
+              </div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+                IT consultant company in the pharmacy and health industry
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Build and maintain a national scale for a private state company, using Java with Spring Boot and PostgreSQL</li>
+                <li>Revamp reporting and improve the performance</li>
+                <li>Provide fast delivery of UAT change request</li>
+              </ul>
+            </div>
+            <div className="tech-stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Java</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>Spring Boot</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
+            <h4>Programmer</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-name">
+                <span>Internship</span> (Medan, Indonesia)
+              </div>
+              <div className="company-period">
+                <span>June 2017 - August 2018</span>
+              </div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+                Directorate General of Customs and Investigation
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Develop and maintain a web application system of archive processing management with PHP</li>
+              </ul>
+            </div>
+            <div className="tech-stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>PHP</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>Laravel</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>MySQL</li>
                   </ul>
                 </div>
               </div>

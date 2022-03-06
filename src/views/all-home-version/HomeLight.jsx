@@ -38,7 +38,7 @@ const HomeLight = () => {
                     />
                     <span className="menu_content">About</span>
                   </Tab>
-                  <Tab>
+                  {/* <Tab>
                     <img
                       className="svg"
                       src="/assets/img/svg/briefcase.svg"
@@ -61,7 +61,7 @@ const HomeLight = () => {
                       alt="mail"
                     />
                     <span className="menu_content"> Contact</span>
-                  </Tab>
+                  </Tab> */}
                 </ul>
               </div>
               {/* END MENU */}
