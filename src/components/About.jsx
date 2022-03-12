@@ -107,19 +107,19 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Develop and maintain three backend services (Warehouse Operation System, E-Commerce, Storage Management) with C#, Typescript and NodeJS</li>
-                <li>Implement database with PostgreSQL and MongoDB</li>
-                <li>Implement a logging system with RabbitMQ and MongoDB</li>
-                <li>Implement a caching system with Redis</li>
-                <li>Implement REST API for service communication</li>
-                <li>Implement SOLID Principles</li>
-                <li>Maintain Unit Tests for each function</li>
-                <li>Implement file management with AWS S3</li>
-                <li>Create high-level and low-level documentation</li>
-                <li>Develop App-Management, Products, Shops and Balances services</li>
-                <li>Create Sign-In with Apple integration for the service user authentication</li>
-                <li>Implement Github Action CI to run unit test on push to an active branch</li>
-                <li>Containerize the services with Docker and Docker Compose</li>
+                <li>Develop and maintain three backend services (Warehouse Operation System, E-Commerce, Storage Management) with <b>C#</b>, <b>Typescript</b> and <b>NodeJS</b></li>
+                <li>Implement database with <b>PostgreSQL</b> and <b>MongoDB</b></li>
+                <li>Implement a logging system with <b>RabbitMQ</b> and <b>MongoDB</b></li>
+                <li>Implement a caching system with <b>Redis</b></li>
+                <li>Implement <b>REST API</b> for service communication</li>
+                <li>Implement <b>SOLID</b> Principles</li>
+                <li>Maintain <b>Unit Tests</b> for each function</li>
+                <li>Implement file management with <b>AWS S3</b></li>
+                <li>Create <b>high-level</b> and <b>low-level documentation</b></li>
+                <li>Develop <b>App-Management</b>, <b>Products</b>, <b>Shops</b> and <b>Balances</b> services</li>
+                <li>Create <b>Sign-In with Apple</b> integration for the service user authentication</li>
+                <li>Implement <b>Github Action CI</b> to run unit test on push to an active branch</li>
+                <li>Containerize the services with <b>Docker</b> and <b>Docker Compose</b></li>
               </ul>
             </div>
             <div className="tech-stacks">
@@ -178,36 +178,36 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Design and develop Order Status Management, Generic Order Fulfillment and Unified Order History platform service with Golang</li>
-                <li>Design database system using CockroachDB</li>
-                <li>Maintain high availability, reliability and scalability for the services</li>
-                <li>Implement Dependency Injection, Design Patterns and SOLID Principles</li>
-                <li>Implement ACID Principles for the database</li>
-                <li>Implement asynchronous communication and retryable system with Go-NSQ Message Queue</li>
-                <li>Develop GraphQL server for Front End communication</li>
-                <li>Implement REST API and gRPC to communicate to other backend services</li>
-                <li>Implement search engine with ElasticSearch</li>
-                <li>Implement caching system with Redis Cluster</li>
-                <li>Implement schedule-based auto-scale with Terraform on high traffic events</li>
-                <li>Become a PIC for the 2 biggest vertical businesses (Marketplace and Digital Goods) to collaborate and integrate into the Unified Order History service</li>
-                <li>Implement system monitoring tools with Datadog, Grafana and Scalyr</li>
-                <li>Implement CI/CD with Jenkins</li>
-                <li>Create and maintain Unit Tests code coverage with a minimum of 70%</li>
-                <li>Create Integration Tests for all endpoints in an isolated environment with Docker</li>
-                <li>Create End-to-end Tests for almost all possible flows</li>
-                <li>Perform Load Tests to find out the system's limit</li>
+                <li>Design and develop <b>Order Status Management</b>, <b>Generic Order Fulfillment</b> and <b>Unified Order History platform</b> service with Golang</li>
+                <li>Design database system using <b>CockroachDB</b></li>
+                <li>Maintain <b>high availability</b>, <b>reliability</b> and <b>scalability</b> for the services</li>
+                <li>Implement <b>Dependency Injection</b>, <b>Design Patterns</b> and <b>SOLID Principles</b></li>
+                <li>Implement <b>ACID Principles</b> for the database</li>
+                <li>Implement asynchronous communication and retryable system with <b>Go-NSQ Message Queue</b></li>
+                <li>Develop <b>GraphQL</b> server for Front End communication</li>
+                <li>Implement <b>REST API</b> and <b>gRPC</b> to communicate to other backend services</li>
+                <li>Implement search engine with <b>ElasticSearch</b></li>
+                <li>Implement caching system with <b>Redis Cluster</b></li>
+                <li>Implement <b>schedule-based auto-scale</b> with <b>Terraform</b> on high traffic events</li>
+                <li>Become a <b>PIC</b> for the 2 biggest vertical businesses (<b>Marketplace</b> and <b>Digital Goods</b>) to collaborate and integrate into the <b>Unified Order History</b> service</li>
+                <li>Implement system monitoring tools with <b>Datadog</b>, <b>Grafana</b> and <b>Scalyr</b></li>
+                <li>Implement <b>CI/CD</b> with <b>Jenkins</b></li>
+                <li>Create and maintain <b>Unit Tests</b> code coverage with a minimum of <b>70%</b></li>
+                <li>Create <b>Integration Tests</b> for all endpoints in an isolated environment with <b>Docker</b></li>
+                <li>Create <b>End-to-end Tests</b> for almost all possible flows</li>
+                <li>Perform <b>Load Tests</b> to find out the system's limit</li>
               </ul>
             </div>
             <div className="key-points">
               <span>Achievements</span>
               <ul>
-                <li>Increase service uptime by more than 99%</li>
-                <li>Keep the error rate below 1%</li>
-                <li>Increase system performance up to 300% (2500 RPS, average 60ms response time)</li>
-                <li>Improve functionality performance by reusing gRPC client, String Concatenation efficiency, Reduce nested loops based on benchmark tests.</li>
-                <li>Reduce dependencies for other team services with Order Status Management service</li>
-                <li>Speed up new vertical business delivery with General Order Fulfillment service</li>
-                <li>Increase customer satisfaction with Unified Order History service  based on app reviews and feedbacks</li>
+                <li>Increase service <b>uptime</b> by more than <b>99%</b></li>
+                <li>Keep the <b>error rate</b> below <b>1%</b></li>
+                <li>Increase system performance up to <b>300%</b> (<b>2500 RPS</b>, average <b>60ms</b> response time)</li>
+                <li>Improve functionality performance by <b>reusing gRPC client</b>, <b>String Concatenation efficiency</b>, <b>Reduce nested loops</b> based on <b>benchmark tests</b></li>
+                <li>Reduce dependencies for other team services with <b>Order Status Management</b> service</li>
+                <li>Speed up new vertical business delivery with <b>General Order Fulfillment</b> service</li>
+                <li>Increase customer satisfaction with <b>Unified Order History</b> service  based on app reviews and feedbacks</li>
               </ul>
             </div>
             <div className="tech-stacks">
@@ -266,9 +266,9 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Build and maintain a national scale for a private state company, using Java with Spring Boot and PostgreSQL</li>
+                <li>Build and maintain a national scale for a private state company, using <b>Java</b> with <b>Spring Boot</b> and <b>PostgreSQL</b></li>
                 <li>Revamp reporting and improve the performance</li>
-                <li>Provide fast delivery of UAT change request</li>
+                <li>Provide fast delivery of <b>UAT change request</b></li>
               </ul>
             </div>
             <div className="tech-stacks">
@@ -314,7 +314,7 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Develop and maintain a web application system of archive processing management with PHP</li>
+                <li>Develop and maintain a web application system of archive processing management with <b>PHP</b></li>
               </ul>
             </div>
             <div className="tech-stacks">
