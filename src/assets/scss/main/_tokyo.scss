@@ -606,6 +606,32 @@ hr.dotted {
   height: auto;
   margin-bottom: 26px;
 }
+.tokyo_tm_about .experience .summary {
+  width: 100%;
+  padding-left: 50px;
+}
+.tokyo_tm_about .experience .summary .row-grey,
+.tokyo_tm_about .experience .summary .row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tokyo_tm_about .experience .summary .row-grey {
+  background-color: #f8f8f8;
+}
+.tokyo_tm_about .experience .summary .row-grey .title,
+.tokyo_tm_about .experience .summary .row .title {
+  width: 20%;
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+.tokyo_tm_about .experience .summary .row-grey .desc,
+.tokyo_tm_about .experience .summary .row .desc {
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
 .tokyo_tm_about .experience .job .company {
   width: 100%;
   display: flex;
@@ -1770,6 +1796,9 @@ body.modal {
     width: 100%;
     padding: 0px;
   }
+  .tokyo_tm_about .experience .summary {
+    padding-left: 0px;
+  }
   .tokyo_tm_about .experience .job .company {
     flex-direction: column;
   }
@@ -1825,6 +1854,18 @@ body.modal {
   .tokyo_tm_home .avatar {
     min-width: 200px;
     min-height: 200px;
+  }
+  .tokyo_tm_about .experience .summary .row-grey
+  {
+    background-color: #efefef;
+  }
+  .tokyo_tm_about .experience .summary .row-grey .title,
+  .tokyo_tm_about .experience .summary .row .title {
+    width: 30%;
+  }
+  .tokyo_tm_about .experience .summary .row-grey .desc,
+  .tokyo_tm_about .experience .summary .row .desc {
+    width: 70%;
   }
   .tokyo_tm_portfolio .portfolio_list {
     margin: 0px;

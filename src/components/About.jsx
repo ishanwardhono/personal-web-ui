@@ -82,6 +82,23 @@ const About = () => {
           </div>
           {/* END DESCRIPTION INNER */}
         </div>
+
+        <div className="separator"></div>
+        <div className="experience">
+          <h2 className="name">Skills Summary</h2>
+          <div className="summary">
+            <div className="row-grey"><div className="title">Languages:</div><div className="desc">Go, Typescript, C#, NodeJS, Java</div></div>
+            <div className="row"><div className="title">Databases:</div><div className="desc">PostgreSQL, MongoDB, CockroachDB, Redis</div></div>
+            <div className="row-grey"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
+            <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ</div></div>
+            <div className="row-grey"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
+            <div className="row"><div className="title">Container:</div><div className="desc">Docker</div></div>
+            <div className="row-grey"><div className="title">Test:</div><div className="desc">Unit, Integration, End-to-end, Benchmark</div></div>
+            <div className="row"><div className="title">CI/CD:</div><div className="desc">Jenkins, CircleCI, Github Actions Workflow</div></div>
+            <div className="row-grey"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
+          </div>
+        </div>
+
         <div className="separator"></div>
         <div className="experience">
           <h2 className="name">Experience</h2>
