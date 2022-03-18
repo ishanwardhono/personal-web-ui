@@ -629,26 +629,26 @@ hr.dotted {
   float: right;
   font-size: 18px;
 }
-.tokyo_tm_about .experience .job .tech-stacks .list,
+.tokyo_tm_about .experience .job .stacks .list,
 .tokyo_tm_about .experience .job .key-points > ul,
 .tokyo_tm_about .experience .job .company-desc {
   padding-left: 50px;
 }
 
-.tokyo_tm_about .experience .job .tech-stacks > span,
+.tokyo_tm_about .experience .job .stacks > span,
 .tokyo_tm_about .experience .job .key-points > span {
   font-weight: bold;
   font-size: 16px;
 }
-.tokyo_tm_about .experience .job .tech-stacks .list {
+.tokyo_tm_about .experience .job .stacks .list {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.tokyo_tm_about .experience .job .tech-stacks .list .left,
-.tokyo_tm_about .experience .job .tech-stacks .list .qleft,
-.tokyo_tm_about .experience .job .tech-stacks .list .right,
-.tokyo_tm_about .experience .job .tech-stacks .list .qright {
+.tokyo_tm_about .experience .job .stacks .list .left,
+.tokyo_tm_about .experience .job .stacks .list .qleft,
+.tokyo_tm_about .experience .job .stacks .list .right,
+.tokyo_tm_about .experience .job .stacks .list .qright {
   width: 25%;
   font-weight: bold;
 }
@@ -1783,10 +1783,10 @@ body.modal {
   .tokyo_tm_about .experience .job .company-desc {
     padding-left: 0px;
   }
-  .tokyo_tm_about .experience .job .tech-stacks .list .left,
-  .tokyo_tm_about .experience .job .tech-stacks .list .qleft,
-  .tokyo_tm_about .experience .job .tech-stacks .list .right,
-  .tokyo_tm_about .experience .job .tech-stacks .list .qright {
+  .tokyo_tm_about .experience .job .stacks .list .left,
+  .tokyo_tm_about .experience .job .stacks .list .qleft,
+  .tokyo_tm_about .experience .job .stacks .list .right,
+  .tokyo_tm_about .experience .job .stacks .list .qright {
     width: 50%;
   }
   .tokyo_tm_title .title_flex {

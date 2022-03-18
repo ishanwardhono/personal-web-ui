@@ -122,7 +122,7 @@ const About = () => {
                 <li>Containerize the services with <b>Docker</b> and <b>Docker Compose</b></li>
               </ul>
             </div>
-            <div className="tech-stacks">
+            <div className="stacks">
               <span>Tech Stacks</span>
               <div className="list">
                 <div className="left">
@@ -151,6 +151,16 @@ const About = () => {
                     <li>AWS S3</li>
                     <li>AWS Lambda Function</li>
                     <li>Jest</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>AWS</li>
                   </ul>
                 </div>
               </div>
@@ -210,7 +220,7 @@ const About = () => {
                 <li>Increase customer satisfaction with <b>Unified Order History</b> service  based on app reviews and feedbacks</li>
               </ul>
             </div>
-            <div className="tech-stacks">
+            <div className="stacks">
               <span>Tech Stacks</span>
               <div className="list">
                 <div className="left">
@@ -243,6 +253,26 @@ const About = () => {
                 </div>
               </div>
             </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Aliyun</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>GCP</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="job">
             <h4>Java Programmer</h4>
@@ -271,7 +301,7 @@ const About = () => {
                 <li>Provide fast delivery of <b>UAT change request</b></li>
               </ul>
             </div>
-            <div className="tech-stacks">
+            <div className="stacks">
               <span>Tech Stacks</span>
               <div className="list">
                 <div className="left">
@@ -317,7 +347,7 @@ const About = () => {
                 <li>Develop and maintain a web application system of archive processing management with <b>PHP</b></li>
               </ul>
             </div>
-            <div className="tech-stacks">
+            <div className="stacks">
               <span>Tech Stacks</span>
               <div className="list">
                 <div className="left">
