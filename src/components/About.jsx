@@ -349,7 +349,7 @@ const About = () => {
                 <span>Internship</span> (Medan, Indonesia)
               </div>
               <div className="company-period">
-                <span>June 2017 - August 2018</span>
+                <span>June 2017 - August 2017</span>
               </div>
             </div>
 
@@ -380,6 +380,55 @@ const About = () => {
                 <div className="right">
                   <ul>
                     <li>MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="separator"></div>
+        <div className="experience">
+          <h2 className="name">Education</h2>
+          <div className="job">
+            <h4>Computer Science</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-name">
+                <span>Universitas Sumatera Utara</span> (Medan, Indonesia)
+              </div>
+              <div className="company-period">
+                <span>September 2014 - July 2018</span>
+              </div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+                Bachelor of Computer Science
+              </p>
+            </div>
+            <div className="common">
+              <div className="row-grey"><div className="title">GPA:</div><div className="desc">3.76</div></div>
+              <div className="row"><div className="title">Relevant Courses:</div><div className="desc">Computer Science, Software Engineering, Information Technology</div></div>
+              <div className="row-grey"><div className="title">Research Title:</div><div className="desc">Implementation of the Hill Cipher 4x4 Algorithm and ElGamal Elliptic Curve Algorithm on Hybrid Cryptosystem for Security Digital Image Android Based</div></div>
+            </div>
+            <div className="stacks">
+              <span>Teaching Assistant Class:</span>
+              <div className="list">
+                <div className="hleft">
+                  <ul>
+                    <li>Programming Algorithm</li>
+                    <li>Data Structure and Algorithm</li>
+                    <li>Object-Oriented Programming</li>
+                  </ul>
+                </div>
+                <div className="hright">
+                  <ul>
+                    <li>Algorithm Analysis Design</li>
+                    <li>Compilation Technique</li>
+                    <li>Computer Graphics and Visualisation</li>
                   </ul>
                 </div>
               </div>

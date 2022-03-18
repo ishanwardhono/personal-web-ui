@@ -606,18 +606,30 @@ hr.dotted {
   height: auto;
   margin-bottom: 26px;
 }
+.tokyo_tm_about .experience .job .common {
+  width: 100%;
+}
 .tokyo_tm_about .experience .summary {
   width: 100%;
   padding-left: 50px;
 }
+.tokyo_tm_about .experience .job .common .row-grey,
+.tokyo_tm_about .experience .job .common .row,
 .tokyo_tm_about .experience .summary .row-grey,
 .tokyo_tm_about .experience .summary .row {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
+.tokyo_tm_about .experience .job .common .row-grey,
 .tokyo_tm_about .experience .summary .row-grey {
   background-color: #f8f8f8;
+}
+.tokyo_tm_about .experience .job .common .row-grey .title,
+.tokyo_tm_about .experience .job .common .row .title {
+  width: 20%;
+  font-weight: bold;
+  font-size: 16px;
 }
 .tokyo_tm_about .experience .summary .row-grey .title,
 .tokyo_tm_about .experience .summary .row .title {
@@ -626,11 +638,11 @@ hr.dotted {
   font-weight: 700;
   color: #000;
 }
+.tokyo_tm_about .experience .job .common .row-grey .desc,
+.tokyo_tm_about .experience .job .common .row .desc,
 .tokyo_tm_about .experience .summary .row-grey .desc,
 .tokyo_tm_about .experience .summary .row .desc {
   width: 80%;
-  justify-content: center;
-  align-items: center;
 }
 .tokyo_tm_about .experience .job .company {
   width: 100%;
@@ -670,6 +682,10 @@ hr.dotted {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+}
+.tokyo_tm_about .experience .job .stacks .list .hleft,
+.tokyo_tm_about .experience .job .stacks .list .hright {
+  width: 50%;
 }
 .tokyo_tm_about .experience .job .stacks .list .left,
 .tokyo_tm_about .experience .job .stacks .list .qleft,
@@ -1812,6 +1828,10 @@ body.modal {
   .tokyo_tm_about .experience .job .company-desc {
     padding-left: 0px;
   }
+  .tokyo_tm_about .experience .job .stacks .list .hleft,
+  .tokyo_tm_about .experience .job .stacks .list .hright {
+    width: 100%;
+  }
   .tokyo_tm_about .experience .job .stacks .list .left,
   .tokyo_tm_about .experience .job .stacks .list .qleft,
   .tokyo_tm_about .experience .job .stacks .list .right,
@@ -1855,14 +1875,19 @@ body.modal {
     min-width: 200px;
     min-height: 200px;
   }
+  .tokyo_tm_about .experience .job .common .row-grey,
   .tokyo_tm_about .experience .summary .row-grey
   {
     background-color: #efefef;
   }
+.tokyo_tm_about .experience .job .common .row-grey .title,
+.tokyo_tm_about .experience .job .common .row .title,
   .tokyo_tm_about .experience .summary .row-grey .title,
   .tokyo_tm_about .experience .summary .row .title {
     width: 30%;
   }
+.tokyo_tm_about .experience .job .common .row-grey .desc,
+.tokyo_tm_about .experience .job .common .row .desc,
   .tokyo_tm_about .experience .summary .row-grey .desc,
   .tokyo_tm_about .experience .summary .row .desc {
     width: 70%;
