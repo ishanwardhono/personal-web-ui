@@ -28,7 +28,7 @@ const About = () => {
               <ul>
                 <li>
                   <p>
-                    <span>Birthday:</span>21 Jan 1996
+                    <span>Birthday:</span>21 January 1996
                   </p>
                 </li>
                 <li>
