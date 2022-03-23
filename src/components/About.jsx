@@ -108,12 +108,11 @@ const About = () => {
             <hr className="dotted"></hr>
             
             <div className="company">
-              <div className="company-name">
-                <span>Pingspace Robotics</span> (Remote - Penang, Malaysia)
+              <div className="company-detail">
+                <div className="company-name">Pingspace Robotics</div>
+                <div className="company-place">(Remote - Penang, Malaysia)</div>
               </div>
-              <div className="company-period">
-                <span>June 2021 - Now</span>
-              </div>
+              <div className="company-period">June 2021 - Now</div>
             </div>
 
             <div className="company-desc">
@@ -189,12 +188,11 @@ const About = () => {
             <hr className="dotted"></hr>
             
             <div className="company">
-              <div className="company-name">
-                <span>Tokopedia</span> (Jakarta, Indonesia)
+              <div className="company-detail">
+                <div className="company-name">Tokopedia</div>
+                <div className="company-place">(Jakarta, Indonesia)</div>
               </div>
-              <div className="company-period">
-                <span>April 2019 - May 2021</span>
-              </div>
+              <div className="company-period">April 2019 - May 2021</div>
             </div>
 
             <div className="company-desc">
@@ -297,12 +295,11 @@ const About = () => {
             <hr className="dotted"></hr>
             
             <div className="company">
-              <div className="company-name">
-                <span>PT. Buana Varia Komputama</span> (Jakarta, Indonesia)
+              <div className="company-detail">
+                <div className="company-name">PT. Buana Varia Komputama</div>
+                <div className="company-place">(Jakarta, Indonesia)</div>
               </div>
-              <div className="company-period">
-                <span>November 2018 - April 2019</span>
-              </div>
+              <div className="company-period">November 2018 - April 2019</div>
             </div>
 
             <div className="company-desc">
@@ -345,12 +342,11 @@ const About = () => {
             <hr className="dotted"></hr>
             
             <div className="company">
-              <div className="company-name">
-                <span>Internship</span> (Medan, Indonesia)
+              <div className="company-detail">
+                <div className="company-name">Internship</div>
+                <div className="company-place">(Medan, Indonesia)</div>
               </div>
-              <div className="company-period">
-                <span>June 2017 - August 2017</span>
-              </div>
+              <div className="company-period">June 2017 - August 2017</div>
             </div>
 
             <div className="company-desc">
@@ -396,12 +392,11 @@ const About = () => {
             <hr className="dotted"></hr>
             
             <div className="company">
-              <div className="company-name">
-                <span>Universitas Sumatera Utara</span> (Medan, Indonesia)
+              <div className="company-detail">
+                <div className="company-name">Universitas Sumatera Utara</div>
+                <div className="company-place">(Medan, Indonesia)</div>
               </div>
-              <div className="company-period">
-                <span>September 2014 - July 2018</span>
-              </div>
+              <div className="company-period">September 2014 - July 2018</div>
             </div>
 
             <div className="company-desc">
