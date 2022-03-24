@@ -16,7 +16,7 @@ const HomeLight = () => {
           <div className="leftpart">
             <div className="leftpart_inner">
               <div className="logo">
-                <b><h3>Ishan Wardhono</h3></b>
+                <b><h2>Ishan Wardhono</h2></b>
               </div>
               {/* END LOGO */}
 
