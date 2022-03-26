@@ -693,6 +693,7 @@ hr.dotted {
 .tokyo_tm_about .experience .job .stacks .list .hleft,
 .tokyo_tm_about .experience .job .stacks .list .hright {
   width: 50%;
+  font-weight: bold;
 }
 .tokyo_tm_about .experience .job .stacks .list .left,
 .tokyo_tm_about .experience .job .stacks .list .qleft,
@@ -700,6 +701,20 @@ hr.dotted {
 .tokyo_tm_about .experience .job .stacks .list .qright {
   width: 25%;
   font-weight: bold;
+}
+.tokyo_tm_about .experience a {
+  text-decoration: none;
+  color: #000;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.tokyo_tm_about .experience a:hover {
+  color: #000;
+  letter-spacing: 1px;
 }
 .tokyo_tm_button {
   width: 100%;
@@ -1886,6 +1901,9 @@ body.modal {
   }
 }
 @media (max-width: 767px) {
+  .tokyo_tm_all_wrap .leftpart_inner .logo h2 {
+    font-size: 26px;
+  }
   .tokyo_tm_home .details .name {
     font-size: 35px;
   }
@@ -2016,6 +2034,13 @@ body.modal {
 }
 
 @media (max-width: 576px) {
+  .tokyo_tm_all_wrap .leftpart_inner .logo h2 {
+    font-size: 24px;
+  }
+  img.svg {
+    width: 20px;
+    height: 20px;
+  }
   .tokyo_tm_contact {
     padding-bottom: 100px;
   }

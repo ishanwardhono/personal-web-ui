@@ -430,6 +430,66 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="separator"></div>
+        <div className="experience">
+          <h2 className="name">Personal Project</h2>
+          <div className="job">
+          <h4>Personal Web</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-detail">
+                <div className="company-name">
+                  <a href="https://pancisukarela.com">pancisukarela.com</a>
+                  </div>
+              </div>
+              <div className="company-period">January 2022</div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+                Online resume personal web
+              </p>
+            </div>
+            <div className="stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>Firebase</li>
+                    <li>Google Domain</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>GCP Compute Engine</li>
+                    <li>Github Workflows</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>GCP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </>
   );
