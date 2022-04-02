@@ -21,6 +21,17 @@ const About = () => {
           <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
         </div> */}
         {/* END ABOUT IMAGE */}
+        <div className="segment-head">
+          <a href='/assets/file/Resume - Ishan Wardhono.pdf'>
+            <div className="download-resume">
+              <img className="svg"
+                src={'/assets/img/svg/download.svg'}
+              ></img>
+              <span className="df">81 KB</span>
+              <span className="dfn">My Resume</span>
+            </div>
+          </a>
+        </div>
         <div className="description">
           <h2 className="name">Ishan Wardhono - Backend Software Engineer</h2>
           <div className="description_inner">

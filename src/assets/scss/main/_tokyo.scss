@@ -536,7 +536,7 @@ hr.dotted {
   height: auto;
   clear: both;
   float: left;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 .tokyo_tm_about .about_image img {
   min-width: 100%;
@@ -715,6 +715,53 @@ hr.dotted {
 .tokyo_tm_about .experience a:hover {
   color: #000;
   letter-spacing: 1px;
+}
+.tokyo_tm_about .segment-head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+.tokyo_tm_about .segment-head .download-resume {
+  width: 200px;
+  height: 60px;
+  background: black;
+  float: left;
+  border-radius: 5px;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.tokyo_tm_about .segment-head .download-resume > img {
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.tokyo_tm_about .segment-head .download-resume > .svg {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.tokyo_tm_about .segment-head .download-resume .df,
+.tokyo_tm_about .segment-head .download-resume .dfn {
+  position: absolute;
+  left: 70px;
+}
+.tokyo_tm_about .segment-head .download-resume .df {
+  top: 6px;
+  font-size: 12px;
+}
+.tokyo_tm_about .segment-head .download-resume .dfn {
+  top: 23px;
+  font-size: 20px;
+}
+.tokyo_tm_about .segment-head .download-resume:hover {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 .tokyo_tm_button {
   width: 100%;
