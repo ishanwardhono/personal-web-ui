@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Brand from "./Brand";
 
 Modal.setAppElement("#root");
+
+const calculateAge = (birthdate) => {
+  const today = new Date();
+  const birthDate = new Date(birthdate);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
 
 const About = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +20,9 @@ const About = () => {
   function toggleModal() {
     setIsOpen(!isOpen);
   }
+  
+  // Usage
+  const age = calculateAge('1996-01-21');
 
   return (
     <>
@@ -26,8 +39,8 @@ const About = () => {
             <div className="download-resume">
               <img className="svg"
                 src={'/assets/img/svg/download.svg'}
-              ></img>
-              <span className="df">81 KB</span>
+              ></img> 
+              <span className="df">130 KB</span>
               <span className="dfn">My Resume</span>
             </div>
           </a>
@@ -44,12 +57,13 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>26
+                    <span>Age:</span>{age}
                   </p>
                 </li>
                 <li>
                   <p>
-                    <span>Address:</span>Jakarta, Indonesia
+                    <span>Address:</span>
+                    <a href="https://maps.app.goo.gl/GBZh6vsbXAkheovu8?g_st=ic">Yogyakarta, Indonesia</a>
                   </p>
                 </li>
                 <li>
@@ -98,12 +112,13 @@ const About = () => {
         <div className="experience">
           <h2 className="name">Skills Summary</h2>
           <div className="summary">
-            <div className="row-grey"><div className="title">Languages:</div><div className="desc">Go, Typescript, C#, NodeJS, Java</div></div>
+            <div className="row-grey"><div className="title">Languages:</div><div className="desc">Golang, Rust, C#, NodeJS</div></div>
             <div className="row"><div className="title">Databases:</div><div className="desc">PostgreSQL, MongoDB, CockroachDB, Redis</div></div>
             <div className="row-grey"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
-            <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ</div></div>
+            <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ, Kafka, Redpanda</div></div>
             <div className="row-grey"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
             <div className="row"><div className="title">Container:</div><div className="desc">Docker</div></div>
+            <div className="row"><div className="title">Orchestration:</div><div className="desc">Kubernetes, Docker Compose</div></div>
             <div className="row-grey"><div className="title">Test:</div><div className="desc">Unit, Integration, End-to-end, Benchmark</div></div>
             <div className="row"><div className="title">CI/CD:</div><div className="desc">Jenkins, CircleCI, Github Actions Workflow</div></div>
             <div className="row-grey"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
@@ -114,6 +129,202 @@ const About = () => {
         <div className="experience">
           <h2 className="name">Experience</h2>
           <div className="job">
+            <h4>Backend Engineer</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-detail">
+                <div className="company-name">Evermos</div>
+                <div className="company-place">(Yogyakarta, Indonesia)</div>
+              </div>
+              <div className="company-period">November 2023 - Now</div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+              E-commerce platform for reselling and dropshipping, aiming to empower local entrepreneurs
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Maintained and enhanced <b>Golang</b> services for transaction modules: <b>Cart</b>, <b>Checkout</b>, and <b>Order</b>.</li>
+                <li>Implemented databases using <b>MySQL</b> and <b>DynamoDB</b>.</li>
+                <li>Debugged using <b>Grafana</b> and performed bug fixes.</li>
+                <li>Developed <b>REST APIs</b> for service communication.</li>
+                <li>Maintained <b>Unit Tests</b> for each function to ensure code reliability.</li>
+              </ul>
+            </div>
+            <div className="stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Golang</li>
+                    <li>MySQL</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>DynamoDB</li>
+                    <li>Kubernetes</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>Redis</li>
+                    <li>Grafana</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
+            <h4>Golang Developer (Freelance)</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-detail">
+                <div className="company-name">Epic Startups</div>
+                <div className="company-place">(Kuala Lumpur, Malaysia)</div>
+              </div>
+              <div className="company-period">July 2023 - November 2023</div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+              Software house startup
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Develop and maintain backend services with <b>Golang</b> and <b>PostgreSQL</b> database</li>
+                <li>Building microservices with several layers: <b>BFF</b>, <b>Orchestrator</b>, and <b>Core</b></li>
+                <li>Manage the microservices and the deployment with <b>Kubernetes</b></li>
+                <li>Run the microservices at <b>GKE (Google Kubernetes Engine)</b></li>
+                <li>Implement activity log with <b>Kafka</b></li>
+                <li>Monitor system logs with <b>Google Log Explorer</b></li>
+                <li>Implement <b>REST API</b> for service communication</li>
+                <li>Collaborate with the Front End team to improve the system UI/UX</li>
+
+                <li>Enhance existing features of a <b>Golang</b> service, including a custom table system.</li>
+                <li>Maintain a <b>Node.js</b> service for the payment system, integrated with <b>Stripe</b>.</li>
+                <li>Implement a <b>Golang</b> service for a generic workflow system, using <b>Temporal</b> and <b>Redpanda</b> with schemas based in <b>JSON</b>.</li>
+                <li>Implement an optimization function to provide solutions for the logistic service problem, specifically for truck route planning (pick-up and delivery), using <b>Google Optimization Tools (OR-Tools)</b>.</li>
+              </ul>
+            </div>
+            <div className="stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Golang</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>Docker</li>
+                    <li>Redpanda</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>Temporal</li>
+                    <li>Google OR-Tools</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>DigitalOcean</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
+            <h4>Backend Software Engineer</h4>
+            
+            <hr className="dotted"></hr>
+            
+            <div className="company">
+              <div className="company-detail">
+                <div className="company-name">Accenture</div>
+                <div className="company-place">(Kuala Lumpur, Malaysia)</div>
+              </div>
+              <div className="company-period">November 2022 - July 2023</div>
+            </div>
+
+            <div className="company-desc">
+              <p>
+              IT solution company for Thailand's bank
+              </p>
+            </div>
+            <div className="key-points">
+              <span>Responsibilities</span>
+              <ul>
+                <li>Develop and maintain backend services with <b>Golang</b> and <b>PostgreSQL</b> database</li>
+                <li>Building microservices with several layers: <b>BFF</b>, <b>Orchestrator</b>, and <b>Core</b></li>
+                <li>Manage the microservices and the deployment with <b>Kubernetes</b></li>
+                <li>Run the microservices at <b>GKE (Google Kubernetes Engine)</b></li>
+                <li>Implement activity log with <b>Kafka</b></li>
+                <li>Monitor system logs with <b>Google Log Explorer</b></li>
+                <li>Implement <b>REST API</b> for service communication</li>
+                <li>Collaborate with the Front End team to improve the system UI/UX</li>
+              </ul>
+            </div>
+            <div className="stacks">
+              <span>Tech Stacks</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>Golang</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+                <div className="qleft">
+                  <ul>
+                    <li>Kubernetes</li>
+                    <li>Kafka</li>
+                  </ul>
+                </div>
+                <div className="right">
+                  <ul>
+                    <li>Google Kubernetes Engine</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="stacks">
+              <span>Platform</span>
+              <div className="list">
+                <div className="left">
+                  <ul>
+                    <li>GCP</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="job">
             <h4>Backend Developer</h4>
             
             <hr className="dotted"></hr>
@@ -121,9 +332,9 @@ const About = () => {
             <div className="company">
               <div className="company-detail">
                 <div className="company-name">Pingspace Robotics</div>
-                <div className="company-place">(Remote - Penang, Malaysia)</div>
+                <div className="company-place">(Penang, Malaysia)</div>
               </div>
-              <div className="company-period">June 2021 - Now</div>
+              <div className="company-period">June 2021 - November 2022</div>
             </div>
 
             <div className="company-desc">

@@ -19,9 +19,10 @@ const Home = () => {
           <div className="details">
             <h3 className="name">Ishan Wardhono</h3>
             <p className="job">
-              <b>3 years</b> of experience as a <b>Backend Software Engineer</b>.
-              Skilled in <b>Go</b>, <b>Typescript</b>, <b>NodeJS</b> and <b>Java</b>.
-              Familiar with <b>Object-Oriented Programming</b> and <b>Design Patterns</b>.
+              <b>5 years</b> of experience as <b>Backend Software Engineer</b>.
+              Proficient in <b>Go</b>, familiar with <b>Rust</b>, <b>C#</b>, and <b>Node.js</b>.
+              Skilled in <b>Object-Oriented Programming</b>, <b>Microservices architecture</b> and <b>Design patterns</b>.
+              Experienced in writing <b>Unit</b> and <b>Integration Tests</b>.
             </p>
             {/* END JOB */}
             <Social />

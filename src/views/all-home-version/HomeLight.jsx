@@ -3,9 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Link } from "react-router-dom";
 import Home from "../../components/Home";
 import About from "../../components/About";
-import Portfolio from "../../components/PortfolioCreative";
-import News from "../../components/News";
-import Contact from "../../components/Contact";
 
 const HomeLight = () => {
   return (
@@ -100,27 +97,6 @@ const HomeLight = () => {
                   </div>
                 </TabPanel>
                 {/* END ABOUT MENU TAB CONTENT */}
-
-                <TabPanel>
-                  <Portfolio />
-                </TabPanel>
-                {/* END PORTFOLIO MENU TAB CONTENT */}
-
-                <TabPanel>
-                  <News />
-                </TabPanel>
-                {/* END NEWS MENU TAB CONTENT */}
-
-                <TabPanel>
-                  <div
-                    data-aos="fade-right"
-                    data-aos-duration="1200"
-                    data-aos-delay="200"
-                  >
-                    <Contact />
-                  </div>
-                </TabPanel>
-                {/* END CONTACT MENU TAB CONTENT */}
               </div>
             </div>
           </div>
