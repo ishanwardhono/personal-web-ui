@@ -1,38 +1,27 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
+import React from "react";
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
-  
-  // Usage
-
   return (
     <>
       <div className="tokyo_tm_about">
-        <div className="about_image ">
-          <img src="assets/img/slider/about_1.jpg" alt="about" />
+        <div className="about_image">
+          <img src="assets/img/slider/about_1.jpg" alt="Ishan Wardhono profile" />
         </div>
-        {/* <div className="o-video">
-          <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
-        </div> */}
         {/* END ABOUT IMAGE */}
         <div className="segment-head">
-          <a href='/assets/file/Resume - Ishan Wardhono.pdf'>
+          <a href='/assets/file/Resume - Ishan Wardhono.pdf' aria-label="Download resume">
             <div className="download-resume">
-              <img className="svg"
-                src={'/assets/img/svg/download.svg'}
-              ></img> 
+              <img 
+                className="svg"
+                src={'/assets/img/svg/download.svg'} 
+                alt="Download icon"
+              />
               <span className="df">198 KB</span>
               <span className="dfn">My Resume</span>
             </div>
           </a>
         </div>
+        
         <div className="description">
           <h2 className="name">Ishan Wardhono - Backend Software Engineer</h2>
           <div className="description_inner">
@@ -52,7 +41,7 @@ const About = () => {
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:mail@gmai.com">ishanwardhono@gmail.com</a>
+                    <a href="mailto:ishanwardhono@gmail.com">ishanwardhono@gmail.com</a>
                   </p>
                 </li>
               </ul>
@@ -79,7 +68,6 @@ const About = () => {
                   </p>
                 </li>
               </ul>
-              {/* END UL */}
             </div>
             {/* END RIGHT */}
           </div>
@@ -90,16 +78,16 @@ const About = () => {
         <div className="experience">
           <h2 className="name">Skills Summary</h2>
           <div className="summary">
-            <div className="row-grey"><div className="title">Languages:</div><div className="desc">Golang, C#, Java</div></div>
+            <div className="row"><div className="title">Languages:</div><div className="desc">Golang, C#, Java</div></div>
             <div className="row"><div className="title">Databases:</div><div className="desc">PostgreSQL, MySQL, MongoDB, CockroachDB, Redis</div></div>
-            <div className="row-grey"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
+            <div className="row"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
             <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ</div></div>
-            <div className="row-grey"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
+            <div className="row"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
             <div className="row"><div className="title">Container:</div><div className="desc">Docker</div></div>
             <div className="row"><div className="title">Orchestration:</div><div className="desc">Kubernetes, Docker Compose</div></div>
-            <div className="row-grey"><div className="title">Test:</div><div className="desc">Unit, Integration</div></div>
+            <div className="row"><div className="title">Test:</div><div className="desc">Unit, Integration</div></div>
             <div className="row"><div className="title">CI/CD:</div><div className="desc">Jenkins, CircleCI, Github Actions Workflow</div></div>
-            <div className="row-grey"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
+            <div className="row"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
           </div>
         </div>
 
@@ -446,9 +434,9 @@ const About = () => {
               </p>
             </div>
             <div className="common">
-              <div className="row-grey"><div className="title">GPA:</div><div className="desc">3.76</div></div>
+              <div className="row"><div className="title">GPA:</div><div className="desc">3.76</div></div>
               <div className="row"><div className="title">Relevant Courses:</div><div className="desc">Computer Science, Software Engineering, Information Technology</div></div>
-              <div className="row-grey"><div className="title">Research Title:</div><div className="desc">Implementation of the Hill Cipher 4x4 Algorithm and ElGamal Elliptic Curve Algorithm on Hybrid Cryptosystem for Security Digital Image Android Based</div></div>
+              <div className="row"><div className="title">Research Title:</div><div className="desc">Implementation of the Hill Cipher 4x4 Algorithm and ElGamal Elliptic Curve Algorithm on Hybrid Cryptosystem for Security Digital Image Android Based</div></div>
             </div>
             <div className="stacks">
               <span>Teaching Assistant Class:</span>
@@ -471,7 +459,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );
