@@ -1,50 +1,27 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
-
-Modal.setAppElement("#root");
-
-const calculateAge = (birthdate) => {
-  const today = new Date();
-  const birthDate = new Date(birthdate);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  const m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-    age--;
-  }
-  return age;
-}
+import React from "react";
 
 const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  function toggleModal() {
-    setIsOpen(!isOpen);
-  }
-  
-  // Usage
-  const age = calculateAge('1996-01-21');
-
   return (
     <>
       <div className="tokyo_tm_about">
-        <div className="about_image ">
-          <img src="assets/img/slider/about_1.jpg" alt="about" />
+        <div className="about_image">
+          <img src="assets/img/slider/about_1.jpg" alt="Ishan Wardhono profile" />
         </div>
-        {/* <div className="o-video">
-          <iframe src="https://www.youtube.com/embed/0yW7w8F2TVA"></iframe>
-        </div> */}
         {/* END ABOUT IMAGE */}
         <div className="segment-head">
-          <a href='/assets/file/Resume - Ishan Wardhono.pdf'>
+          <a href='/assets/file/Resume - Ishan Wardhono.pdf' aria-label="Download resume">
             <div className="download-resume">
-              <img className="svg"
-                src={'/assets/img/svg/download.svg'}
-              ></img> 
-              <span className="df">130 KB</span>
+              <img 
+                className="svg"
+                src={'/assets/img/svg/download.svg'} 
+                alt="Download icon"
+              />
+              <span className="df">198 KB</span>
               <span className="dfn">My Resume</span>
             </div>
           </a>
         </div>
+        
         <div className="description">
           <h2 className="name">Ishan Wardhono - Backend Software Engineer</h2>
           <div className="description_inner">
@@ -57,11 +34,6 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Age:</span>{age}
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Address:</span>
                     <a href="https://maps.app.goo.gl/GBZh6vsbXAkheovu8?g_st=ic">Yogyakarta, Indonesia</a>
                   </p>
@@ -69,7 +41,7 @@ const About = () => {
                 <li>
                   <p>
                     <span>Email:</span>
-                    <a href="mailto:mail@gmai.com">ishanwardhono@gmail.com</a>
+                    <a href="mailto:ishanwardhono@gmail.com">ishanwardhono@gmail.com</a>
                   </p>
                 </li>
               </ul>
@@ -85,11 +57,6 @@ const About = () => {
                 </li>
                 <li>
                   <p>
-                    <span>Education:</span>Bachelor of Computer Science
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>LinkedIn:</span>
                     <a href="https://linkedin.com/in/ishanwardhono">linkedin.com/in/ishanwardhono</a>
                   </p>
@@ -101,7 +68,6 @@ const About = () => {
                   </p>
                 </li>
               </ul>
-              {/* END UL */}
             </div>
             {/* END RIGHT */}
           </div>
@@ -112,16 +78,16 @@ const About = () => {
         <div className="experience">
           <h2 className="name">Skills Summary</h2>
           <div className="summary">
-            <div className="row-grey"><div className="title">Languages:</div><div className="desc">Golang, Rust, C#, NodeJS</div></div>
-            <div className="row"><div className="title">Databases:</div><div className="desc">PostgreSQL, MongoDB, CockroachDB, Redis</div></div>
-            <div className="row-grey"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
-            <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ, Kafka, Redpanda</div></div>
-            <div className="row-grey"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
+            <div className="row"><div className="title">Languages:</div><div className="desc">Golang, C#, Java</div></div>
+            <div className="row"><div className="title">Databases:</div><div className="desc">PostgreSQL, MySQL, MongoDB, CockroachDB, Redis</div></div>
+            <div className="row"><div className="title">API:</div><div className="desc">REST, gRPC, GraphQL</div></div>
+            <div className="row"><div className="title">Message Queue:</div><div className="desc">Go-NSQ, RabbitMQ</div></div>
+            <div className="row"><div className="title">Cloud Platform:</div><div className="desc">Google Cloud Platforms (GCP), Amazon Web Services (AWS)</div></div>
             <div className="row"><div className="title">Container:</div><div className="desc">Docker</div></div>
             <div className="row"><div className="title">Orchestration:</div><div className="desc">Kubernetes, Docker Compose</div></div>
-            <div className="row-grey"><div className="title">Test:</div><div className="desc">Unit, Integration, End-to-end, Benchmark</div></div>
+            <div className="row"><div className="title">Test:</div><div className="desc">Unit, Integration</div></div>
             <div className="row"><div className="title">CI/CD:</div><div className="desc">Jenkins, CircleCI, Github Actions Workflow</div></div>
-            <div className="row-grey"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
+            <div className="row"><div className="title">Monitoring Tools:</div><div className="desc">Datadog, Grafana, Scalyr</div></div>
           </div>
         </div>
 
@@ -149,11 +115,15 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Maintained and enhanced <b>Golang</b> services for transaction modules: <b>Cart</b>, <b>Checkout</b>, and <b>Order</b>.</li>
-                <li>Implemented databases using <b>MySQL</b> and <b>DynamoDB</b>.</li>
-                <li>Debugged using <b>Grafana</b> and performed bug fixes.</li>
-                <li>Developed <b>REST APIs</b> for service communication.</li>
-                <li>Maintained <b>Unit Tests</b> for each function to ensure code reliability.</li>
+                <li>Maintain and enhance <b>Golang</b> services for transaction modules.</li>
+                <li>Implement databases using <b>MySQL</b> and <b>DynamoDB</b>.</li>
+                <li>Manage critical <b>e-commerce services</b>, such as Cart, Checkout, Promo, Campaign, and Order Management.</li>
+                <li>Debug using <b>Grafana</b> and perform bug fixes.</li>
+                <li>Develop <b>REST APIs</b> for service communication.</li>
+                <li>Create automation workflows with <b>N8N Workflows</b>.</li>
+                <li>Draft <b>Technical Requirements Documents (TRD)</b> for each project, aligning with the Product Requirement Document (PRD).</li>
+                <li>Draft <b>Change Management Documents</b> for every production change, including service deployments and database query executions.</li>
+                <li>Maintain <b>Unit Tests</b> for each function to ensure code reliability.</li>
               </ul>
             </div>
             <div className="stacks">
@@ -174,7 +144,7 @@ const About = () => {
                 <div className="right">
                   <ul>
                     <li>Redis</li>
-                    <li>Grafana</li>
+                    <li>N8N</li>
                   </ul>
                 </div>
               </div>
@@ -191,104 +161,33 @@ const About = () => {
             </div>
           </div>
           <div className="job">
-            <h4>Golang Developer (Freelance)</h4>
-            
-            <hr className="dotted"></hr>
-            
-            <div className="company">
-              <div className="company-detail">
-                <div className="company-name">Epic Startups</div>
-                <div className="company-place">(Kuala Lumpur, Malaysia)</div>
-              </div>
-              <div className="company-period">July 2023 - November 2023</div>
-            </div>
-
-            <div className="company-desc">
-              <p>
-              Software house startup
-              </p>
-            </div>
-            <div className="key-points">
-              <span>Responsibilities</span>
-              <ul>
-                <li>Develop and maintain backend services with <b>Golang</b> and <b>PostgreSQL</b> database</li>
-                <li>Building microservices with several layers: <b>BFF</b>, <b>Orchestrator</b>, and <b>Core</b></li>
-                <li>Manage the microservices and the deployment with <b>Kubernetes</b></li>
-                <li>Run the microservices at <b>GKE (Google Kubernetes Engine)</b></li>
-                <li>Implement activity log with <b>Kafka</b></li>
-                <li>Monitor system logs with <b>Google Log Explorer</b></li>
-                <li>Implement <b>REST API</b> for service communication</li>
-                <li>Collaborate with the Front End team to improve the system UI/UX</li>
-
-                <li>Enhance existing features of a <b>Golang</b> service, including a custom table system.</li>
-                <li>Maintain a <b>Node.js</b> service for the payment system, integrated with <b>Stripe</b>.</li>
-                <li>Implement a <b>Golang</b> service for a generic workflow system, using <b>Temporal</b> and <b>Redpanda</b> with schemas based in <b>JSON</b>.</li>
-                <li>Implement an optimization function to provide solutions for the logistic service problem, specifically for truck route planning (pick-up and delivery), using <b>Google Optimization Tools (OR-Tools)</b>.</li>
-              </ul>
-            </div>
-            <div className="stacks">
-              <span>Tech Stacks</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>Golang</li>
-                    <li>PostgreSQL</li>
-                  </ul>
-                </div>
-                <div className="qleft">
-                  <ul>
-                    <li>Docker</li>
-                    <li>Redpanda</li>
-                  </ul>
-                </div>
-                <div className="right">
-                  <ul>
-                    <li>Temporal</li>
-                    <li>Google OR-Tools</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="stacks">
-              <span>Platform</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>DigitalOcean</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="job">
             <h4>Backend Software Engineer</h4>
-            
             <hr className="dotted"></hr>
-            
             <div className="company">
               <div className="company-detail">
-                <div className="company-name">Accenture</div>
+                <div className="company-name">HTC Global Services</div>
                 <div className="company-place">(Kuala Lumpur, Malaysia)</div>
               </div>
-              <div className="company-period">November 2022 - July 2023</div>
+              <div className="company-period">November 2022 - November 2023</div>
             </div>
 
             <div className="company-desc">
               <p>
-              IT solution company for Thailand's bank
+              IT solution company worked for Accenture
               </p>
             </div>
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Develop and maintain backend services with <b>Golang</b> and <b>PostgreSQL</b> database</li>
-                <li>Building microservices with several layers: <b>BFF</b>, <b>Orchestrator</b>, and <b>Core</b></li>
-                <li>Manage the microservices and the deployment with <b>Kubernetes</b></li>
-                <li>Run the microservices at <b>GKE (Google Kubernetes Engine)</b></li>
-                <li>Implement activity log with <b>Kafka</b></li>
-                <li>Monitor system logs with <b>Google Log Explorer</b></li>
-                <li>Implement <b>REST API</b> for service communication</li>
-                <li>Collaborate with the Front End team to improve the system UI/UX</li>
+                <li>Worked on an Accenture project, contributing to the development of an <b>OpenAPI</b> service for a major bank in Thailand.</li>
+                <li>Developed and maintained backend services with <b>Golang</b> and <b>PostgreSQL</b> database.</li>
+                <li>Built <b>microservices</b> with several layers: <b>BFF</b>, <b>Orchestrator</b>, and <b>Core</b>.</li>
+                <li>Managed microservices deployment with <b>Kubernetes</b>.</li>
+                <li>Operated microservices on <b>GKE (Google Kubernetes Engine)</b>.</li>
+                <li>Implemented activity logs using <b>Kafka</b>.</li>
+                <li>Monitored system logs with <b>Google Log Explorer</b>.</li>
+                <li>Implemented <b>REST APIs</b> for service communication.</li>
+                <li>Collaborated with the Frontend team to improve system UI/UX.</li>
               </ul>
             </div>
             <div className="stacks">
@@ -345,19 +244,19 @@ const About = () => {
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Develop and maintain three backend services (Warehouse Operation System, E-Commerce, Storage Management) with <b>C#</b>, <b>Typescript</b> and <b>NodeJS</b></li>
-                <li>Implement database with <b>PostgreSQL</b> and <b>MongoDB</b></li>
-                <li>Implement a logging system with <b>RabbitMQ</b> and <b>MongoDB</b></li>
-                <li>Implement a caching system with <b>Redis</b></li>
-                <li>Implement <b>REST API</b> for service communication</li>
-                <li>Implement <b>SOLID</b> Principles</li>
-                <li>Maintain <b>Unit Tests</b> for each function</li>
-                <li>Implement file management with <b>AWS S3</b></li>
-                <li>Create <b>high-level</b> and <b>low-level documentation</b></li>
-                <li>Develop <b>App-Management</b>, <b>Products</b>, <b>Shops</b> and <b>Balances</b> services</li>
-                <li>Create <b>Sign-In with Apple</b> integration for the service user authentication</li>
-                <li>Implement <b>Github Action CI</b> to run unit test on push to an active branch</li>
-                <li>Containerize the services with <b>Docker</b> and <b>Docker Compose</b></li>
+                <li>Developed and maintained three backend services (Warehouse Operation System, E-Commerce, Storage Management) with <b>C#</b>, <b>TypeScript, an</b>d <b>Node.js</b>.</li>
+                <li>Implemented databases with <b>PostgreSQL</b> and <b>MongoDB</b>.</li>
+                <li>Implemented a logging system with <b>RabbitMQ</b> and <b>MongoDB</b>.</li>
+                <li>Implemented a caching system with <b>Redis</b>.</li>
+                <li>Developed <b>REST APIs</b> for service communication.</li>
+                <li>Applied <b>SOLID Principles</b> to codebases.</li>
+                <li>Maintained <b>Unit Tests</b> for each function.</li>
+                <li>Integrated file management with <b>AWS S3</b>.</li>
+                <li>Created high-level and low-level documentation.</li>
+                <li>Developed <b>App-Management</b>, <b>Products</b>, <b>Shops</b>, and <b>Balances</b> services.</li>
+                <li>Integrated <b>Sign-In with Apple</b> for user authentication.</li>
+                <li>Implemented <b>GitHub Actions CI</b> to run unit tests on active branch pushes.</li>
+                <li>Containerized services using <b>Docker</b> and <b>Docker Compose</b>.</li>
               </ul>
             </div>
             <div className="stacks">
@@ -419,42 +318,42 @@ const About = () => {
 
             <div className="company-desc">
               <p>
-                A leading Indonesian unicorn technology company in the e-commerce industry
+                A leading Indonesian unicorn technology company in the <b>e-commerce</b> industry
               </p>
             </div>
             <div className="key-points">
               <span>Responsibilities</span>
               <ul>
-                <li>Design and develop <b>Order Status Management</b>, <b>Generic Order Fulfillment</b> and <b>Unified Order History platform</b> service with Golang</li>
-                <li>Design database system using <b>CockroachDB</b></li>
-                <li>Maintain <b>high availability</b>, <b>reliability</b> and <b>scalability</b> for the services</li>
-                <li>Implement <b>Dependency Injection</b>, <b>Design Patterns</b> and <b>SOLID Principles</b></li>
-                <li>Implement <b>ACID Principles</b> for the database</li>
-                <li>Implement asynchronous communication and retryable system with <b>Go-NSQ Message Queue</b></li>
-                <li>Develop <b>GraphQL</b> server for Front End communication</li>
-                <li>Implement <b>REST API</b> and <b>gRPC</b> to communicate to other backend services</li>
-                <li>Implement search engine with <b>ElasticSearch</b></li>
-                <li>Implement caching system with <b>Redis Cluster</b></li>
-                <li>Implement <b>schedule-based auto-scale</b> with <b>Terraform</b> on high traffic events</li>
-                <li>Become a <b>PIC</b> for the 2 biggest vertical businesses (<b>Marketplace</b> and <b>Digital Goods</b>) to collaborate and integrate into the <b>Unified Order History</b> service</li>
-                <li>Implement system monitoring tools with <b>Datadog</b>, <b>Grafana</b> and <b>Scalyr</b></li>
-                <li>Implement <b>CI/CD</b> with <b>Jenkins</b></li>
-                <li>Create and maintain <b>Unit Tests</b> code coverage with a minimum of <b>70%</b></li>
-                <li>Create <b>Integration Tests</b> for all endpoints in an isolated environment with <b>Docker</b></li>
-                <li>Create <b>End-to-end Tests</b> for almost all possible flows</li>
-                <li>Perform <b>Load Tests</b> to find out the system's limit</li>
+                <li>Designed and developed Order Status Management, Generic Order Fulfillment, and Unified Order History platform services with <b>Golang</b>.</li>
+                <li>Designed database systems using <b>CockroachDB</b>.</li>
+                <li>Maintained high availability, reliability, and scalability for services.</li>
+                <li>Implemented <b>Dependency Injection</b>, <b>Design Patterns</b>, and <b>SOLID Principles</b>.</li>
+                <li>Ensured database operations adhered to <b>ACID Principles</b>.</li>
+                <li>Developed asynchronous communication and retryable systems using <b>Go-NSQ Message Queue</b>.</li>
+                <li>Developed a <b>GraphQL</b> server for frontend communication.</li>
+                <li>Developed <b>REST APIs</b> and <b>gRPC</b> services for backend communication.</li>
+                <li>Built a search engine using <b>Elasticsearch</b>.</li>
+                <li>Implemented caching systems with <b>Redis Cluster</b>.</li>
+                <li>Configured schedule-based autoscaling with <b>Terraform</b> during high-traffic events.</li>
+                <li>Acted as PIC for two major vertical businesses (Marketplace and Digital Goods) for Unified Order History integration.</li>
+                <li>Implemented system monitoring with <b>Datadog</b>, <b>Grafana</b>, and <b>Scalyr</b>.</li>
+                <li>Built <b>CI/CD</b> pipelines with <b>Jenkins</b>.</li>
+                <li>Maintained <b>Unit Test</b> coverage above 70%.</li>
+                <li>Created <b>Integration Tests</b> for all endpoints in an isolated <b>Docker</b> environment.</li>
+                <li>Developed <b>End-to-End Tests</b> covering almost all possible user flows.</li>
+                <li>Conducted <b>Load Tests</b> to determine system capacity.</li>
               </ul>
             </div>
             <div className="key-points">
               <span>Achievements</span>
               <ul>
-                <li>Increase service <b>uptime</b> by more than <b>99%</b></li>
-                <li>Keep the <b>error rate</b> below <b>1%</b></li>
-                <li>Increase system performance up to <b>300%</b> (<b>2500 RPS</b>, average <b>60ms</b> response time)</li>
-                <li>Improve functionality performance by <b>reusing gRPC client</b>, <b>String Concatenation efficiency</b>, <b>Reduce nested loops</b> based on <b>benchmark tests</b></li>
-                <li>Reduce dependencies for other team services with <b>Order Status Management</b> service</li>
-                <li>Speed up new vertical business delivery with <b>General Order Fulfillment</b> service</li>
-                <li>Increase customer satisfaction with <b>Unified Order History</b> service  based on app reviews and feedbacks</li>
+                <li>Increased service uptime to over <b>99%</b>.</li>
+                <li>Maintained error rates below <b>1%</b>.</li>
+                <li>Improved system performance by up to <b>300%</b> (<b>2500 RPS</b>, <b>60 ms</b> average response time).</li>
+                <li>Enhanced functionality performance by optimizing <b>gRPC</b> clients, string concatenations, and reducing nested loops.</li>
+                <li>Reduced dependency across services with the Order Status Management service.</li>
+                <li>Accelerated vertical business delivery with the General Order Fulfillment service.</li>
+                <li>Increased customer satisfaction with the Unified Order History service based on app reviews and feedback.</li>
               </ul>
             </div>
             <div className="stacks">
@@ -463,13 +362,13 @@ const About = () => {
                 <div className="left">
                   <ul>
                     <li>Golang</li>
-                    <li>CockroachDb</li>
+                    <li>CockroachDB</li>
                     <li>Redis Cluster</li>
                   </ul>
                 </div>
                 <div className="qleft">
                   <ul>
-                    <li>ElasticSearch</li>
+                    <li>Elasticsearch</li>
                     <li>Go-NSQ (MQ)</li>
                     <li>gRPC</li>
                   </ul>
@@ -511,98 +410,6 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="job">
-            <h4>Java Programmer</h4>
-            
-            <hr className="dotted"></hr>
-            
-            <div className="company">
-              <div className="company-detail">
-                <div className="company-name">PT. Buana Varia Komputama</div>
-                <div className="company-place">(Jakarta, Indonesia)</div>
-              </div>
-              <div className="company-period">November 2018 - April 2019</div>
-            </div>
-
-            <div className="company-desc">
-              <p>
-                IT consultant company in the pharmacy and health industry
-              </p>
-            </div>
-            <div className="key-points">
-              <span>Responsibilities</span>
-              <ul>
-                <li>Build and maintain a national scale for a private state company, using <b>Java</b> with <b>Spring Boot</b> and <b>PostgreSQL</b></li>
-                <li>Revamp reporting and improve the performance</li>
-                <li>Provide fast delivery of <b>UAT change request</b></li>
-              </ul>
-            </div>
-            <div className="stacks">
-              <span>Tech Stacks</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>Java</li>
-                  </ul>
-                </div>
-                <div className="qleft">
-                  <ul>
-                    <li>Spring Boot</li>
-                  </ul>
-                </div>
-                <div className="right">
-                  <ul>
-                    <li>PostgreSQL</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="job">
-            <h4>Programmer</h4>
-            
-            <hr className="dotted"></hr>
-            
-            <div className="company">
-              <div className="company-detail">
-                <div className="company-name">Internship</div>
-                <div className="company-place">(Medan, Indonesia)</div>
-              </div>
-              <div className="company-period">June 2017 - August 2017</div>
-            </div>
-
-            <div className="company-desc">
-              <p>
-                Directorate General of Customs and Investigation
-              </p>
-            </div>
-            <div className="key-points">
-              <span>Responsibilities</span>
-              <ul>
-                <li>Develop and maintain a web application system of archive processing management with <b>PHP</b></li>
-              </ul>
-            </div>
-            <div className="stacks">
-              <span>Tech Stacks</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>PHP</li>
-                  </ul>
-                </div>
-                <div className="qleft">
-                  <ul>
-                    <li>Laravel</li>
-                  </ul>
-                </div>
-                <div className="right">
-                  <ul>
-                    <li>MySQL</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="separator"></div>
@@ -627,9 +434,9 @@ const About = () => {
               </p>
             </div>
             <div className="common">
-              <div className="row-grey"><div className="title">GPA:</div><div className="desc">3.76</div></div>
+              <div className="row"><div className="title">GPA:</div><div className="desc">3.76</div></div>
               <div className="row"><div className="title">Relevant Courses:</div><div className="desc">Computer Science, Software Engineering, Information Technology</div></div>
-              <div className="row-grey"><div className="title">Research Title:</div><div className="desc">Implementation of the Hill Cipher 4x4 Algorithm and ElGamal Elliptic Curve Algorithm on Hybrid Cryptosystem for Security Digital Image Android Based</div></div>
+              <div className="row"><div className="title">Research Title:</div><div className="desc">Implementation of the Hill Cipher 4x4 Algorithm and ElGamal Elliptic Curve Algorithm on Hybrid Cryptosystem for Security Digital Image Android Based</div></div>
             </div>
             <div className="stacks">
               <span>Teaching Assistant Class:</span>
@@ -652,66 +459,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
-        <div className="separator"></div>
-        <div className="experience">
-          <h2 className="name">Personal Project</h2>
-          <div className="job">
-          <h4>Personal Web</h4>
-            
-            <hr className="dotted"></hr>
-            
-            <div className="company">
-              <div className="company-detail">
-                <div className="company-name">
-                  <a href="https://pancisukarela.com">pancisukarela.com</a>
-                  </div>
-              </div>
-              <div className="company-period">January 2022</div>
-            </div>
-
-            <div className="company-desc">
-              <p>
-                Online resume personal web
-              </p>
-            </div>
-            <div className="stacks">
-              <span>Tech Stacks</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>React</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </div>
-                <div className="qleft">
-                  <ul>
-                    <li>Firebase</li>
-                    <li>Google Domain</li>
-                  </ul>
-                </div>
-                <div className="right">
-                  <ul>
-                    <li>GCP Compute Engine</li>
-                    <li>Github Workflows</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="stacks">
-              <span>Platform</span>
-              <div className="list">
-                <div className="left">
-                  <ul>
-                    <li>GCP</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </>
   );
