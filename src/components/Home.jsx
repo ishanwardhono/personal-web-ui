@@ -19,7 +19,7 @@ const Home = () => {
           <div className="details">
             <h3 className="name">Ishan Wardhono</h3>
             <p className="job">
-              <b>6 years</b> of experience as <b>Backend Software Engineer</b>. Proficient in <b>Golang</b>, familiar with <b>C#</b> and <b>Java</b>. Skilled in <b>Object-Oriented Programming</b>, <b>Microservices architecture</b> and <b>Design patterns</b>. Experienced in writing <b>Unit and Integration Tests</b>.
+              <b>Backend Software Engineer</b>
             </p>
             {/* END JOB */}
             <Social />
