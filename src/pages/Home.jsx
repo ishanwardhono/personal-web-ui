@@ -42,20 +42,7 @@ export default function Home() {
           <div className="section-head">
             <Eyebrow index="01">About</Eyebrow>
           </div>
-          <div className="cols">
-            <div className="cols" style={{ gridTemplateColumns: "1fr", gap: 20 }}>
-              <p className="lead" style={{ margin: 0 }}>
-                {profile.aboutLead}
-              </p>
-            </div>
-            <div className="cols" style={{ gridTemplateColumns: "1fr", gap: 18 }}>
-              {profile.aboutBody.map((para, i) => (
-                <p key={i} style={{ margin: 0 }}>
-                  {para}
-                </p>
-              ))}
-            </div>
-          </div>
+          <p style={{ margin: 0 }}>{profile.about}</p>
         </section>
 
         <section className="shell section" style={{ paddingTop: 0 }}>

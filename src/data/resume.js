@@ -5,15 +5,11 @@ export const profile = {
   email: "ishanwardhono@gmail.com",
   status: "Available for select work · Indonesia",
   summary:
-    "Backend engineer based in Indonesia — building the high-availability microservices behind e-commerce, banking and logistics, and happiest with clean, testable code.",
+    "Backend engineer from Medan, Indonesia. Building high-availability microservices for e-commerce, banking, and logistics, with a focus on clean, testable code.",
   workSummary:
-    "Specializing in Golang, PostgreSQL and high-availability microservices — high-throughput systems, workflow automation, and clean, testable code.",
-  aboutLead:
-    "I care about the parts users never see — the quiet machinery that has to stay up.",
-  aboutBody: [
-    "My work tends to live in the busiest part of a system — carts, checkouts, order management, account integration. I like making those modules fast, observable and boring in the best way: predictable under load, easy to debug at 2am, covered by tests.",
-    "Lately I've been standardising how teams ship — writing the TRDs and change-management workflows that connect product intent to safe production deploys — and automating the repetitive parts with N8N. I'm happiest with clean, testable code and a Grafana board that tells the truth.",
-  ],
+    "Seven years building backend systems with Golang and PostgreSQL. Focused on high-traffic microservices, workflow automation, and clean, well-tested code.",
+  about:
+    "Most of my work sits in the busiest parts of a product, like carts, checkout, order management, and account integration. These are the areas that always need to keep working, even under heavy load. I grew up in Medan and studied Computer Science at Universitas Sumatera Utara. Early in my career I worked on systems that handled heavy traffic at a large e-commerce company, and later spent a few years in Malaysia building a warehouse system and a banking integration platform. These days I focus on making important services reliable and easy to maintain, so they stay stable under load and are simple to debug and test. I also enjoy improving how a team ships code and automating repetitive work with tools like N8N. Lately I have been exploring AI tools like Claude Code and finding ways to use them to work more effectively.",
 };
 
 export const social = {
