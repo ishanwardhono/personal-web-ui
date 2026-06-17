@@ -1,0 +1,94 @@
+<!-- @dsCard group="Portfolio Next" viewport="1280x760" name="Contact" subtitle="Big invitation, details, and a quiet contact form" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ishan Wardhono</title>
+<link rel="icon" href="../../assets/favicon-32.png">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="nav-brand" href="index.html">Ishan Wardhono<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-expanded="false">Menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="shell" style="padding-top:clamp(56px,8vw,110px); padding-bottom:clamp(20px,3vw,32px);">
+    <div class="status"><span class="pulse"></span> Available for select work</div>
+    <div class="eyebrow" style="margin-bottom:22px;"><span class="rule"></span> Contact</div>
+    <h1 class="display h-xl" style="max-width:14ch;">Let’s <span class="serif-italic">talk.</span></h1>
+    <p class="lead" style="max-width:40ch; margin-top:18px;">Have a system that needs to scale, a backend to untangle, or a role you think fits? The fastest way to reach me is email — I read everything.</p>
+  </section>
+
+  <section class="shell section" style="padding-top:clamp(36px,5vw,60px);">
+    <div class="contact-grid">
+      <!-- DETAILS -->
+      <div>
+        <div class="contact-line" style="padding-top:0;">
+          <span class="k">Email</span>
+          <a href="mailto:ishanwardhono@gmail.com">ishanwardhono@gmail.com</a>
+        </div>
+        <div class="contact-line">
+          <span class="k">LinkedIn</span>
+          <a href="https://linkedin.com/in/ishanwardhono">linkedin.com/in/ishanwardhono</a>
+        </div>
+        <div class="contact-line">
+          <span class="k">GitHub</span>
+          <a href="https://github.com/ishanwardhono">github.com/ishanwardhono</a>
+        </div>
+        <div class="contact-line">
+          <span class="k">Based in</span>
+          <span>Yogyakarta, Indonesia · GMT+7</span>
+        </div>
+        <div class="socials" style="margin-top:34px;">
+          <a href="https://linkedin.com/in/ishanwardhono" aria-label="LinkedIn"><img src="../../assets/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a href="https://github.com/ishanwardhono" aria-label="GitHub"><img src="../../assets/icons/github.svg" alt="GitHub"></a>
+          <a href="https://instagram.com/ishanwardhono" aria-label="Instagram"><img src="../../assets/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <form onsubmit="event.preventDefault(); this.reset(); var n=document.getElementById('sent'); n.style.display='block';">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" placeholder="you@company.com" required>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" placeholder="Tell me a little about it…" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send message <span class="arrow">→</span></button>
+        <p id="sent" class="muted" style="display:none; margin-top:18px; font-size:13.5px;">Thanks — this is a demo form. Email me directly at ishanwardhono@gmail.com and I’ll reply.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <div class="footer-bottom" style="margin:0;">
+      <span>© <span data-year>2026</span> Ishan Wardhono</span>
+      <span>Backend Software Engineer</span>
+      <span>Yogyakarta, Indonesia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>

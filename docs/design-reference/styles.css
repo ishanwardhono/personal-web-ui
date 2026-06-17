@@ -1,0 +1,10 @@
+/* ============================================================
+   Ishan Wardhono Design System — global entry point.
+   Consumers link THIS file only. It is an import manifest;
+   never add rules directly here.
+   ============================================================ */
+
+@import "tokens/fonts.css";
+@import "tokens/colors.css";
+@import "tokens/typography.css";
+@import "tokens/spacing.css";

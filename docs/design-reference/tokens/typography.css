@@ -1,0 +1,39 @@
+/* ============================================================
+   TYPOGRAPHY — Ishan Wardhono Design System
+   Montserrat for everything structural (headings, names, nav),
+   Mulish for reading copy, Poppins for form fields. Generous
+   line-height (2.0 on body) and a touch of letter-spacing give
+   the resume its calm, airy editorial rhythm.
+   ============================================================ */
+
+:root {
+  /* ---- Display / heading scale (Montserrat) ---- */
+  --text-h1: 45px;   /* page hero rule */
+  --text-h2: 36px;   /* section names ("Professional Experience") */
+  --text-h3: 30px;   /* sub-section */
+  --text-h4: 24px;   /* job role title */
+  --text-h5: 20px;   /* company name */
+  --text-h6: 16px;
+  --text-name: 55px;  /* home hero name, weight 800 uppercase */
+
+  /* ---- Body scale (Mulish) ---- */
+  --text-body: 15px;     /* default copy */
+  --text-meta: 13px;     /* dates, captions */
+  --text-eyebrow: 12px;  /* uppercase tags / chips */
+
+  /* ---- Weights ---- */
+  --weight-regular: 400;
+  --weight-medium: 500;   /* headings default, nav */
+  --weight-semibold: 600; /* eyebrow chips, news titles */
+  --weight-bold: 700;     /* section names, spec titles */
+  --weight-black: 800;    /* hero name */
+
+  /* ---- Line height ---- */
+  --leading-body: 30px;   /* ~2.0 — the signature airy body */
+  --leading-tight: 1.2;   /* headings */
+
+  /* ---- Letter spacing ---- */
+  --tracking-body: 0.5px;
+  --tracking-hover: 2px;   /* nav/link hover expands tracking */
+  --tracking-wide: 1.4px;  /* form fields */
+}
