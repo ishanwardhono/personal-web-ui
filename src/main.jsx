@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
+import "./styles/tokens.css";
+import "./styles/site.css";
 
 const Stub = ({ name }) => <h1>{name}</h1>;
 
