@@ -4,7 +4,6 @@ import Eyebrow from "../components/Eyebrow";
 import Portrait from "../components/Portrait";
 import SkillRow from "../components/SkillRow";
 import ExperienceItem from "../components/ExperienceItem";
-import Footer from "../components/Footer";
 import { profile, skills, experiences } from "../data/resume";
 
 export default function Work() {
@@ -37,7 +36,7 @@ export default function Work() {
           </div>
         </section>
 
-        <section className="shell section">
+        <section className="shell section reveal">
           <div className="section-head">
             <Eyebrow index="01">Technical Skills</Eyebrow>
           </div>
@@ -48,7 +47,7 @@ export default function Work() {
           </div>
         </section>
 
-        <section className="shell section" style={{ paddingTop: 0 }}>
+        <section className="shell section reveal" style={{ paddingTop: 0 }}>
           <div className="section-head">
             <Eyebrow index="02">Experience</Eyebrow>
           </div>
@@ -57,7 +56,6 @@ export default function Work() {
           ))}
         </section>
       </main>
-      <Footer />
     </>
   );
 }

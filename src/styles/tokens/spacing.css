@@ -18,8 +18,6 @@
   --space-9: 100px;   /* vertical section padding */
 
   /* ---- Layout ---- */
-  --sidebar-width: 450px;   /* fixed left rail */
-  --content-max: 960px;     /* reading column */
   --content-pad: 40px;      /* container horizontal padding */
   --section-pad-y: 100px;
 
@@ -29,14 +27,11 @@
   --radius-md: 5px;         /* buttons */
   --radius-pill: 100px;
   --radius-circle: 50%;
-  /* signature organic avatar shape (animates via @keyframes morph) */
-  --blob-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
 
   /* ---- Shadows ---- */
   --shadow-card: 0 0 20px #dfdfdf;             /* news / content cards */
   --shadow-image: 0 0 20px rgba(0, 0, 0, 0.12); /* framed photos */
   --shadow-header: 0 0 30px rgba(62, 68, 125, 0.08); /* sticky mobile bar */
-  --ring-avatar: inset 0 0 0 9px rgba(255, 255, 255, 0.3); /* @kind shadow */ /* avatar inner ring */
 
   /* ---- Motion ---- */
   --ease: cubic-bezier(0.6, 0.01, 0, 1); /* @kind other */ /* signature reveal ease */

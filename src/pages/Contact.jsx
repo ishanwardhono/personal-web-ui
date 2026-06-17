@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Eyebrow from "../components/Eyebrow";
-import Footer from "../components/Footer";
 import { profile, social } from "../data/resume";
 
 export default function Contact() {
@@ -26,7 +25,7 @@ export default function Contact() {
           </p>
         </section>
 
-        <section className="shell section" style={{ paddingTop: "clamp(36px,5vw,60px)" }}>
+        <section className="shell section reveal" style={{ paddingTop: "clamp(36px,5vw,60px)" }}>
           <div className="contact-line" style={{ paddingTop: 0 }}>
             <span className="k">Email</span>
             <a href={`mailto:${profile.email}`}>{profile.email}</a>
@@ -56,7 +55,6 @@ export default function Contact() {
           </div>
         </section>
       </main>
-      <Footer middle="Backend Software Engineer" />
     </>
   );
 }

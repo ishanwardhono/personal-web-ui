@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import useScrollReveal from "./hooks/useScrollReveal";
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     <>
       <Nav />
       <Outlet />
+      <Footer />
     </>
   );
 }

@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Eyebrow from "../components/Eyebrow";
 import Portrait from "../components/Portrait";
-import Footer from "../components/Footer";
 import { profile, education, certifications } from "../data/resume";
 
 export default function Home() {
@@ -38,14 +37,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="shell section" style={{ paddingTop: 0 }}>
+        <section className="shell section reveal" style={{ paddingTop: 0 }}>
           <div className="section-head">
             <Eyebrow index="01">About</Eyebrow>
           </div>
           <p style={{ margin: 0 }}>{profile.about}</p>
         </section>
 
-        <section className="shell section" style={{ paddingTop: 0 }}>
+        <section className="shell section reveal" style={{ paddingTop: 0 }}>
           <div className="cols">
             <div>
               <Eyebrow index="02" style={{ marginBottom: 24 }}>
@@ -106,7 +105,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   );
 }

@@ -11,8 +11,8 @@ export default function ExperienceItem({ role, company, period, place, summary, 
           <div className="company">{company}</div>
           <p className="summary">{summary}</p>
           <ul>
-            {bullets.map((b, i) => (
-              <li key={i}>
+            {bullets.map((b) => (
+              <li key={b.lead}>
                 <b>{b.lead}</b> {b.rest}
               </li>
             ))}
