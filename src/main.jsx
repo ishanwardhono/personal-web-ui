@@ -4,10 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
+import Contact from "./pages/Contact";
 import "./styles/tokens.css";
 import "./styles/site.css";
-
-const Stub = ({ name }) => <h1>{name}</h1>;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route element={<App />}>
           <Route index element={<Home />} />
           <Route path="work" element={<Work />} />
-          <Route path="contact" element={<Stub name="Contact" />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
