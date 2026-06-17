@@ -15,7 +15,7 @@ export default function Home() {
         <section className="shell hero">
           <div className="hero-grid">
             <div>
-              <div className="status">
+              <div className="status" style={{ display: "flex" }}>
                 <span className="pulse" /> {profile.status}
               </div>
               <Eyebrow>{profile.role}</Eyebrow>
