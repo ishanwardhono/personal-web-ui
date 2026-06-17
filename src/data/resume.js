@@ -45,7 +45,7 @@ export const experiences = [
     tags: ["Golang", "PostgreSQL", "MySQL", "DynamoDB", "Redis", "Kubernetes", "Grafana", "N8N Workflow", "AWS"],
   },
   {
-    role: "Backend Software Engineer",
+    role: "Golang Developer",
     company: "HTC Global Services",
     period: "Nov 2022 — Nov 2023",
     place: "Kuala Lumpur, MY",
