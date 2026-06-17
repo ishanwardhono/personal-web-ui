@@ -1,7 +1,7 @@
 export const profile = {
   name: "Ishan Wardhono",
   role: "Backend Software Engineer",
-  location: "Yogyakarta, Indonesia",
+  location: "Medan, Sumatera Utara, Indonesia",
   email: "ishanwardhono@gmail.com",
   status: "Available for select work · Indonesia",
   summary:

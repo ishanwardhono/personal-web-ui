@@ -45,7 +45,7 @@ export default function Contact() {
               </div>
               <div className="contact-line">
                 <span className="k">Based in</span>
-                <span>Yogyakarta, Indonesia · GMT+7</span>
+                <span>Medan, Sumatera Utara, Indonesia · GMT+7</span>
               </div>
               <div className="socials" style={{ marginTop: 34 }}>
                 <a href={social.linkedin} aria-label="LinkedIn">
