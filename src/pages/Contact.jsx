@@ -14,7 +14,7 @@ export default function Contact() {
           className="shell"
           style={{ paddingTop: "clamp(56px,8vw,110px)", paddingBottom: "clamp(20px,3vw,32px)" }}
         >
-          <div className="status">
+          <div className="status" style={{ display: "flex" }}>
             <span className="pulse" /> Open to work
           </div>
           <Eyebrow style={{ marginBottom: 22 }}>Contact</Eyebrow>
