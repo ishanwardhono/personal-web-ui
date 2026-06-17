@@ -3,7 +3,7 @@ export const profile = {
   role: "Backend Software Engineer",
   location: "Medan, Sumatera Utara, Indonesia",
   email: "ishanwardhono@gmail.com",
-  status: "Available for select work · Indonesia",
+  status: "Open to work · Indonesia",
   summary:
     "Backend engineer from Medan, Indonesia. Building high-availability microservices for e-commerce, banking, and logistics, with a focus on clean, testable code.",
   workSummary:
@@ -32,7 +32,7 @@ export const experiences = [
   {
     role: "Backend Engineer",
     company: "Evermos",
-    period: "Nov 2023 — Present",
+    period: "Nov 2023 — Apr 2026",
     place: "Yogyakarta, ID",
     summary:
       "Social commerce platform — engineering the core transaction systems that carry the company's revenue flow.",
