@@ -1,0 +1,40 @@
+/* ============================================================
+   SPACING, RADII, SHADOWS — Ishan Wardhono Design System
+   Layout is built on a fixed 450px sidebar + 960px reading column.
+   Radii are mostly flat (the brand favours sharp edges); the two
+   exceptions are the soft 5px button and the morphing blob avatar.
+   ============================================================ */
+
+:root {
+  /* ---- Spacing scale ---- */
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 20px;
+  --space-5: 30px;
+  --space-6: 36px;
+  --space-7: 50px;
+  --space-8: 80px;
+  --space-9: 100px;   /* vertical section padding */
+
+  /* ---- Layout ---- */
+  --content-pad: 40px;      /* container horizontal padding */
+  --section-pad-y: 100px;
+
+  /* ---- Radii ---- */
+  --radius-none: 0px;       /* default — sharp editorial edges */
+  --radius-sm: 4px;         /* modals */
+  --radius-md: 5px;         /* buttons */
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+
+  /* ---- Shadows ---- */
+  --shadow-card: 0 0 20px #dfdfdf;             /* news / content cards */
+  --shadow-image: 0 0 20px rgba(0, 0, 0, 0.12); /* framed photos */
+  --shadow-header: 0 0 30px rgba(62, 68, 125, 0.08); /* sticky mobile bar */
+
+  /* ---- Motion ---- */
+  --ease: cubic-bezier(0.6, 0.01, 0, 1); /* @kind other */ /* signature reveal ease */
+  --transition: all 0.3s ease; /* @kind other */
+  --duration: 0.3s; /* @kind other */
+}

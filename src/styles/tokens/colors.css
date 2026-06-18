@@ -1,0 +1,51 @@
+/* ============================================================
+   COLORS — Ishan Wardhono Design System
+   A strict monochrome editorial palette. Pure black ink on white
+   and a single warm-grey paper tone. Color is reserved for
+   error/feedback states only — the brand itself is black & white.
+   ============================================================ */
+
+:root {
+  /* ---- Ink scale (text + line work) ---- */
+  --ink: #000000;          /* primary: headings, names, hover target, icons */
+  --ink-body: #565656;     /* default body copy */
+  --ink-muted: #767676;    /* menu items, captions, idle nav */
+  --ink-faint: #999999;    /* copyright, meta, italic notes */
+  --ink-placeholder: #6f6f6f;
+
+  /* ---- Surfaces ---- */
+  --surface: #ffffff;       /* sidebar, cards, modals */
+  --surface-paper: #f8f8f8; /* main content canvas, alternating rows */
+  --surface-paper-2: #efefef;
+  --chip-bg: rgba(0, 0, 0, 0.04); /* eyebrow / section tag background */
+
+  /* ---- Lines & borders ---- */
+  --line: #ebebeb;   /* structural divider (content border-left) */
+  --line-row: #e0e0e0; /* table / spec-row rule */
+  --line-field: #eeeeee; /* form field border */
+  --line-dotted: #bbbbbb; /* dotted job separators */
+
+  /* ---- Feedback (validation / system states) ---- */
+  --accent: #e54b4b;   /* legacy hover accent on dates / links in modals */
+  --error: #f52225;    /* validation errors, required marks */
+  --info: #3a00ff;     /* success / return messages */
+
+  /* ---- Brand accent (refined-minimal site) ---- */
+  /* The single restrained chromatic note. Warm clay/terracotta that ties to
+     the warm portrait & paper. Used ONLY for section numbers, active nav,
+     link hovers and small marks — never as a fill or for large areas. */
+  --clay: #b94a2b;
+  --clay-soft: #c9694d;
+  --brand-accent: var(--clay);
+
+  /* ---- Semantic aliases ---- */
+  --text-heading: var(--ink);
+  --text-body: var(--ink-body);
+  --text-muted: var(--ink-muted);
+  --text-meta: var(--ink-faint);
+  --bg-page: var(--surface-paper);
+  --bg-card: var(--surface);
+  --border-card: var(--line);
+  --link: var(--ink);
+  --link-hover: var(--ink);
+}
